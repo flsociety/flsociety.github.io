@@ -1,0 +1,45 @@
+/* Hide unwanted elements for printing */
+nav, footer, .column.left, .chevron, ul {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.accordion {
+    color: black !important;
+}
+
+.column.left {
+    width: 0%;
+}
+.column.right {
+    width: 100%;
+}
+
+
+.lookCard {
+    display: inline-block;
+    margin: 0 10px 0 0; 
+    width: 25%;  
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.lookCard img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+@media print {
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;             
+        justify-content: space-between;
+    }
+
+    .lookCard {
+        width: 25%;     
+        margin-bottom: 0;
+    }
+}

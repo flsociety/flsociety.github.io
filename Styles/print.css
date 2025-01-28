@@ -1,0 +1,24 @@
+nav{
+    display: none;
+}
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.column {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+body, h1, h3, p, a {
+    font-weight: lighter;
+    font-size: 10pt !important; 
+    margin: 0;
+    padding: 0;
+}
+
+

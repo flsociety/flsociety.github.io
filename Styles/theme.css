@@ -1,0 +1,83 @@
+/*
+    Fonts selected from Planet http://www.planet.dk/ (free non-commercial license
+
+    Header
+        Planet Opti
+    
+    Text
+        Planet EStyle
+
+    The theme file must be loaded second in your list of stylesheets after only the reset.css
+*/
+
+
+@font-face {
+    font-family: 'PlanetEStyle';
+    src: url('./Fonts/plane___-webfont.woff') format('woff2'),
+         url('./Fonts/plane___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PlanetMegapolis';
+    src: url('./Fonts/planm___-webfont.woff') format('woff2'),
+         url('./Fonts/planm___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PlanetOpti';
+    src: url('./Fonts/plano___-webfont.woff') format('woff2'),
+         url('./Fonts/plano___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Change the font family names to match your selections */
+:root {
+    --header-font-family: 'PlanetMegapolis', Arial, sans-serif;
+    --header-font-weight-1: 400;
+    --header-font-weight-2: 500;
+    --header-font-weight-3: 700;
+
+    --text-font-family: 'PlanetEStyle', Arial, sans-serif;
+}
+
+
+:root {
+    --colour-1-rgb: #1B4CA7; /*default blue for headers and bars*/
+    --colour-1-hue: 219;
+    --colour-1-saturation: 72%;
+    --colour-1-lightness: 38%;
+    --colour-1: hsl( var(--colour-1-hue), var(--colour-1-saturation), var(--colour-1-lightness));
+
+
+    --colour-2-rgb: #023E73; /*hover blue for menu bar*/
+    --colour-2-hue: 208;
+    --colour-2-saturation: 97%;
+    --colour-2-lightness: 23%;
+    --colour-2: hsl( var(--colour-2-hue), var(--colour-2-saturation), var(--colour-2-lightness));
+     
+    --colour-3-rgb:  #88A5BF ; /*active blue for menu bar and hover blue for links*/
+    --colour-3-hue: 208;
+    --colour-3-saturation: 30%;
+    --colour-3-lightness: 64%;
+    --colour-3: hsl( var(--colour-3-hue), var(--colour-3-saturation), var(--colour-3-lightness));
+
+    --colour-4-rgb: #F2F2F2; /*background*/
+    --colour-4-hue: 0;
+    --colour-4-saturation: 0%;
+    --colour-4-lightness: 95%;
+    --colour-4: hsl( var(--colour-4-hue), var(--colour-4-saturation), var(--colour-4-lightness));
+  
+    --colour-5-rgb: #0D0D0D; /*body text*/
+    --colour-5-hue: 0;
+    --colour-5-saturation: 0%;
+    --colour-5-lightness: 5%;
+    --colour-5: hsl( var(--colour-5-hue), var(--colour-5-saturation), var(--colour-5-lightness));
+}

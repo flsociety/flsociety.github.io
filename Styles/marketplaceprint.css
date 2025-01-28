@@ -1,0 +1,16 @@
+nav, p button, footer{
+    display: none;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+.card h1 {
+    color: black;
+}
+
+.card p {
+    color: black !important;
+}

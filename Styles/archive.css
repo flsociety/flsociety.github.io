@@ -1,0 +1,218 @@
+.card {
+  background-color: #1B4CA7;
+  box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.5);
+  margin: 8px;    
+}
+
+.accordion {
+  background: none;
+  color: #f2f2f2;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.7s;
+  border-bottom: 1.5px solid #f2f2f2;
+  border-top: 1.5px solid #f2f2f2;
+  position:relative;
+  font-family: "PlanetEStyle";
+}
+
+.accordion:hover {
+  background-color: #023E73;
+}
+
+.active {
+  background-color: #88A5BF;
+  color: #f2f2f2;
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.chevron::before {
+  border-style: solid;
+  border-width: 0.25em 0.25em 0 0;
+  content:'';
+  display: inline-block;
+  height: 0.45em;
+  position: relative;
+  top: 22px;
+  vertical-align: top;
+  width: 0.45em;
+  transform: rotate(45deg);
+  position:absolute;
+  right: 20px;
+  transition: all 0.2s ease-out;
+}
+.active .chevron::before {
+  transform: rotate(135deg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 25%;
+  position: sticky; 
+  top: calc(var(--menubar-height, 55px));
+  align-self: flex-start;
+  padding: 10px;
+  height: fit-content;
+}
+
+.right {
+  width: 75%;
+  border-left: 3px solid #f2f2f2;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#sticky-div {
+  position: sticky;
+  top: 0;
+  background-color: #1B4CA7;
+  overflow-y: auto; 
+  max-height: 100vh;
+  font-size: 20px;
+  font-family: "PlanetOpti";
+  overflow-x: auto; 
+  white-space: nowrap; 
+  z-index: 1000;
+  --menubar-height: 55px;
+  border-bottom: 5px solid #f2f2f2;
+}
+  
+#sticky-div ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  flex-wrap: nowrap; 
+}
+
+#sticky-div ul li {
+  float: none;
+}
+
+#sticky-div ul li:first-child {
+  margin-right: auto;
+}
+
+#sticky-div ul li a {
+  display: block;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#sticky-div ul li a:hover {
+  background-color: #023E73;
+}
+  
+#sticky-div .active {
+background-color: #88A5BF;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1B4CA7;
+  color: #F2F2F2;
+}
+
+h3 {
+  font-family: "PlanetOpti";
+  font-weight: lighter;
+}
+
+.lookCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+}
+
+.lookCard h1 {
+  font-family: "PlanetEStyle";
+  color: #0D0D0D;
+}
+
+
+.card ul {
+  list-style-type: none;
+}
+
+.card .left h1 {
+  color: #f2f2f2;
+  margin-left: 20px;
+  font-family: "PlanetOpti";
+  font-weight: lighter;
+
+}
+
+.card .right p {
+  color: #f2f2f2;
+  font-family: "PlanetEStyle";
+  padding-top: 5px;
+}
+
+.card .left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; 
+}
+
+.card .left ul li {
+    margin: 0;
+    padding: 0; 
+}
+
+.card .left ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+  font-size: larger;
+  color: #F2F2F2;
+  font-family: "PlanetOpti";
+  font-weight: lighter;
+  margin-left: 30px;
+}
+.card .left ul li a:hover {
+  background-color: #88A5BF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 800px) {
+  .card .left h1 {
+    font-size: 20px;
+    margin-left: 0;
+
+  }
+  
+  .card .left ul li a {
+    font-size: 20px;
+    margin-left: 0;
+  }
+}

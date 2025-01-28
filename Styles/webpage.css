@@ -1,0 +1,148 @@
+body {
+  font-family: 'PlanetEStyle';
+  color: #0D0D0D;
+  background-color: #F2F2F2;
+  margin: 0;
+}
+
+p {
+  font-size: 25px;
+  margin-bottom: 5%; 
+}
+
+h1, h2 {
+  font-family: "PlanetOpti";
+  font-size: 130px;
+  color: #1B4CA7;
+}
+
+h3 {
+  font-family: 'PlanetOpti';
+  color: #F2F2F2;
+  font-weight: lighter;
+}
+
+#sticky-div {
+  position: sticky;
+  top: 0;
+  background-color: #1B4CA7;
+  overflow-y: auto; 
+  max-height: 100vh;
+  font-size: 20px;
+  font-family: "PlanetOpti";
+  overflow-x: auto; 
+  white-space: nowrap; 
+}
+
+#sticky-div ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  flex-wrap: nowrap; 
+}
+
+#sticky-div ul li {
+  float: none;
+}
+
+#sticky-div ul li:first-child {
+  margin-right: auto;
+}
+
+#sticky-div ul li a {
+  display: block;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#sticky-div ul li a:hover {
+  background-color: #023E73;
+}
+
+#sticky-div .active {
+  background-color: #88A5BF;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; 
+  margin-bottom: 20px;
+}
+
+.column {
+  flex: 1; 
+  min-width: 300px; 
+  max-width: 50%; 
+  overflow-y: auto; 
+  padding: 10px;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+}
+
+.socials {
+  list-style-type: none; 
+  padding: 0;
+  margin: 20px 0;
+}
+
+.socials li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.socials img {
+  width: 10%; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+.socials li a {
+  color: #0D0D0D;
+  font-size: 70px;
+  text-decoration: none;
+  font-family: "PlanetEStyle";
+  margin-bottom: 5%;
+}
+
+.socials li a:hover {
+  color: #88A5BF;
+  background-color: #F2F2F2;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1B4CA7;
+  color: #F2F2F2;
+  font-weight: lighter;
+
+}
+
+@media screen and (max-width: 1500px) {
+  h1 {
+      font-size: 30px;
+  }
+
+  p {
+      font-size: 20px;
+  }
+
+  .socials li a {
+    font-size: 20px;
+  }
+  
+}
+
+@media screen and (max-width:99%)  {
+  .row {
+    display: block;
+  }
+}
