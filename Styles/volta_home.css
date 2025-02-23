@@ -28,6 +28,17 @@
   }
 }
 
+/* #beauty{
+  display: block;
+  width: auto;
+  height: auto;
+  background-image: url(Images/Volta/closed_lipstick.png)
+}
+
+#beauty:hover{
+  background-image: url(Images/Volta/open_lipstick.png);
+} */
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -36,6 +47,11 @@
   font-family: arial;
   margin-bottom: 50px;
   background-color: #FFFFFF;
+}
+
+.card-img-top{
+  height: 200px;
+  width: 200px;
 }
 
 .price {
