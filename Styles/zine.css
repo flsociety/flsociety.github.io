@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  box-shadow: none !important;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+  
+.row {
+  vertical-align: middle;
+  margin: 0 -5px;
+}
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* #beauty{
+  display: block;
+  width: auto;
+  height: auto;
+  background-image: url(Images/Volta/closed_lipstick.png)
+}
+
+#beauty:hover{
+  background-image: url(Images/Volta/open_lipstick.png);
+} */
+
+.fh5---banner---container {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 50px;
+  background-color: #FFFFFF;
+}
+
+.card-img-top{
+  height: 200px;
+  width: 200px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  font-family: "PlanetEStyle";
+}
+
+.card p, h1 {
+  font-family: "PlanetEStyle";
+  color: #000;
+}
+
+h3 {
+  font-family: "PlanetOpti";
+  font-weight: lighter;
+}
+
+.card button:hover {
+  background-color: #88A5BF;
+}
+
+.alignnone {
+  box-shadow: none !important;
+}
+
+#sticky-div {
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    overflow-y: auto; 
+    max-height: 100vh;
+    font-size: 20px;
+    font-family: "PlanetOpti";
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+  
+#sticky-div ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  flex-wrap: nowrap; 
+}
+
+#sticky-div ul li {
+  float: none;
+}
+
+#sticky-div ul li:first-child {
+  margin-right: auto;
+}
+  
+#sticky-div ul li a {
+  display: block;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#sticky-div ul li a:hover {
+  background-color: #023E73;
+}
+  
+#sticky-div .active {
+background-color: #88A5BF;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #1B4CA7;
+  color: #F2F2F2;
+  font-weight: lighter;
+  font-family: "PlanetOpti";
+
+}
