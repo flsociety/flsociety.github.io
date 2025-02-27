@@ -28,17 +28,6 @@
   }
 }
 
-/* #beauty{
-  display: block;
-  width: auto;
-  height: auto;
-  background-image: url(Images/Volta/closed_lipstick.png)
-}
-
-#beauty:hover{
-  background-image: url(Images/Volta/open_lipstick.png);
-} */
-
 .fh5---banner---container {
   display: none !important;
   visibility: hidden !important;
